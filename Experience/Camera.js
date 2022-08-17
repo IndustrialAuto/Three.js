@@ -39,7 +39,7 @@ export default class Camera{
         this.perspectiveCamera.aspect = this.sizes.aspect
         this.perspectiveCamera.updateProjectionMatrix();
 
-        // Updating perspective camera on resizing
+        // Updating orthographic camera on resizing
         this.orthographicCamera.left = 
         (-this.sizes.aspect*this.sizes.frustrum) / 2
         this.orthographicCamera.right = 
@@ -49,5 +49,9 @@ export default class Camera{
         this.orthographicCamera.bottom = 
         (-this.sizes.frustrum / 2)
         this.orthographicCamera.updateProjectionMatrix();
+    }
+
+    update(){
+        
     }
 }
