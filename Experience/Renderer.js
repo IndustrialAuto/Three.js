@@ -38,8 +38,8 @@ export default class Renderer{
 
     }   
 
-    //update(){
-        //this.renderer.render(this.scene, this.camera.perspectiveCamera)
+    update(){
+        this.renderer.render(this.scene, this.camera.perspectiveCamera)
         
-    //}
+    }
 }
