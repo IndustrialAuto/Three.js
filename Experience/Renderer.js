@@ -9,7 +9,7 @@ export default class Renderer{
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
 
-        
+        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width)
 
         this.setRenderer();
     }
@@ -30,7 +30,7 @@ export default class Renderer{
         this.renderer.setSize(this.sizes.width, this.sizes.height);
         this.renderer.setPixelRatio(this.sizes.pixelRatio);
 
-        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width)
+        
     }
 
     resize(){
