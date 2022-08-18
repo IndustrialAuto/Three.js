@@ -10,6 +10,8 @@ export default class Camera{
        
         this.createPerspectiveCamera();
         this.createOrthographicCamera();
+
+        console.log(this.experience, this.canvas)
     }
     createPerspectiveCamera(){
         this.perspectiveCamera = new THREE.PerspectiveCamera(
@@ -52,6 +54,6 @@ export default class Camera{
     }
 
     update(){
-        
+
     }
 }
