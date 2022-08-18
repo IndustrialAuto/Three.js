@@ -10,9 +10,11 @@ export default class Renderer{
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
 
-        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width, this.sizes.height)
+        
 
         this.setRenderer();
+        
+        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width, this.sizes.height)
     }
 
     setRenderer(){
