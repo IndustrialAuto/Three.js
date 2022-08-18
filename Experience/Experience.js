@@ -6,6 +6,8 @@ import Time from "./Utils/Time";
 import Camera from "./Camera.js";
 import Renderer from "./Renderer.js";
 
+
+
 export default class Experience {
 	static instance
     constructor(canvas) {
