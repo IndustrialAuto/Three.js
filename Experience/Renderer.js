@@ -10,13 +10,13 @@ export default class Renderer{
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
 
-        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width, this.sizes.height, this.canvas.width, this.canvas.height)
+        console.log(this.camera, this.camera.perspectiveCamera)
 
         this.setRenderer();
     }
 
     setRenderer(){
-        this.renderer = new THREE.WebGL1Renderer({
+        this.renderer = new THREE.WebGLRenderer({
             canvas : this.canvas,
             antialias: true,
 
