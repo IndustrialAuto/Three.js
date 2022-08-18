@@ -11,7 +11,7 @@ export default class Renderer{
         this.camera = this.experience.camera;
 
         
-        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width, this.sizes.height)
+        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width)
         this.setRenderer();
 
         
