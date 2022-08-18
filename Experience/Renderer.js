@@ -1,6 +1,7 @@
 import * as THREE from "three"
 import Experience from "./Experience";
 
+
 export default class Renderer{
     constructor(){
         this.experience = new Experience();
@@ -9,7 +10,7 @@ export default class Renderer{
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
 
-        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width)
+        
 
         this.setRenderer();
     }
@@ -27,8 +28,10 @@ export default class Renderer{
         this.renderer.toneMappingExposure = 1.75;
         this.renderer.shadowMap.enabled = true;
         this.renderer.shadowMap.type = THREE.PCFShadowMap;
-        this.renderer.setSize(50, 50);
+        this.renderer.setSize(this.sizes.width, this.sizes.height);
         this.renderer.setPixelRatio(this.sizes.pixelRatio);
+
+        console.log(this.camera, this.camera.perspectiveCamera, this.sizes.width, this.sizes.height, this.canvas.width, this.canvas.height)
 
         
     }
