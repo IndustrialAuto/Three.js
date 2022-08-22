@@ -58,7 +58,7 @@ export default class Resources extends EventEmitter{
                 this.videoTexture[asset.name].generateMIomaps = false;
                 this.videoTexture[asset.name].encoding = THREE.sRGBEncoding;
 
-                this.signleAssetLoaded(asset,file);
+                this.signleAssetLoaded(asset,this.videoTexture[asset.name]);
 
             }
         }
