@@ -21,11 +21,21 @@ export default class Experience {
 		this.sizes = new Sizes();
 		this.time = new Time();
 		this.camera = new Camera();
-		this.renderer = new Renderer();
+		this.renderer = new Renderer()
+
+		this.sizes.on("resize", () => {
+			this.resize();
+		});
 		this.time.on("update", () => {
 			this.update();
 
-		})
+		});
+	}
+
+
+	resize() {
+		this.camera.resize();
+		this.renderer.resize();
 	}
 
 	update() {
