@@ -21,7 +21,7 @@ export default class Machine{
     setModel(){
         this.scene.add(this.actualMachine);
         this.actualMachine.scale.set(1,1,1);  //to scale the object size on the webPage.
-        this.actualMachine.rotation.y = Math.PI; //for alligning properly on y axis.
+       // this.actualMachine.rotation.y = Math.PI; //for alligning properly on y axis.
     }
 
     
