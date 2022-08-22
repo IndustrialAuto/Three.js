@@ -8,7 +8,7 @@ export default class Machine{
         this.scene = this.experience.scene;
         this.resources = this.experience.resources;
         this.machine = this.resources.items.machine;
-        this.actualMachine = this.Machine.scene;
+        this.actualMachine = this.machine.scene;
         console.log(this.machine);
 
         this.setModel();
