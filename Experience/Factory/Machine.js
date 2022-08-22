@@ -23,15 +23,15 @@ export default class Machine{
             child.castShadow = true;
             child.receiveShadow = true;
 
-            if (child instanceof THREE.group) {
-                child.children.forEach((groupchild) => {
-                    groupchild.castShadow = true;
-                    groupchild.receiveShadow = true;
-                });
-            }
+           // if (child instanceof THREE.group) {
+           //     child.children.forEach((groupchild) => {
+           //         groupchild.castShadow = true;
+           //         groupchild.receiveShadow = true;
+          //      });
+           // }
             
         });
-        
+
         this.scene.add(this.actualMachine);
         this.actualMachine.scale.set(1,1,1);  //to scale the object size on the webPage.
         this.actualMachine.rotation.y = Math.PI; //for alligning properly on y axis.
