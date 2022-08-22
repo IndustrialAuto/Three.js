@@ -38,7 +38,7 @@ export default class Camera{
         );
         this.scene.add(this.orthographicCamera)
 
-        //Grid Helper to navigate with cursor in the page
+        //Grid Helper 
         const size = 10;
         const divisions = 10;
 
@@ -46,7 +46,7 @@ export default class Camera{
         this.scene.add( gridHelper );
         
 
-        //Axes Helper to navigate with cursor in the page
+        //Axes Helper 
         const axesHelper = new THREE.AxesHelper( 10 );
         this.scene.add( axesHelper );
     }
