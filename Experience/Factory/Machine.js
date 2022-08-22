@@ -9,7 +9,7 @@ export default class Machine{
         this.resources = this.experience.resources;
         this.machine = this.resources.items.machine;
         this.actualMachine = this.machine.scene;
-        console.log(this.machine.scene);
+        console.log("machine.scene", this.machine.scene);
 
         this.setModel();
 
