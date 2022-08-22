@@ -1,6 +1,7 @@
 import * as THREE from "three"
 import Experience from "../Experience";
 import Machine from "./Machine";
+import Environment from "./Environment";
 
 
 
@@ -14,6 +15,7 @@ export default class Factory{
         this.resources = this.experience.resources;
 
         this.resources.on("ready", () => {
+            this.environment = new Environment();
             this.machine = new Machine();
             console.log("created machine");
         });
