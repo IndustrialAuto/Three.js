@@ -19,6 +19,7 @@ export default class Machine{
 
     setModel(){
         this.scene.add(this.actualMachine);
+        this.actualMachine.scale.set(0.11, 0.11);
     }
 
     
