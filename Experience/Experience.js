@@ -5,6 +5,8 @@ import Time from "./Utils/Time";
 
 import Camera from "./Camera.js";
 import Renderer from "./Renderer.js";
+import Factory from "./Factory/Factory.js";
+
 
 
 
@@ -21,7 +23,8 @@ export default class Experience {
 		this.sizes = new Sizes();
 		this.time = new Time();
 		this.camera = new Camera();
-		this.renderer = new Renderer()
+		this.renderer = new Renderer();
+		this.factory = new Factory();
 
 		this.sizes.on("resize", () => {
 			this.resize();
