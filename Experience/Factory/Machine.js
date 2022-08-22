@@ -19,7 +19,7 @@ export default class Machine{
 
     setModel(){
         this.scene.add(this.actualMachine);
-        this.actualMachine.scale.set(1, 1);  //to scale the object size
+        this.actualMachine.scale.set(1,1,1);  //to scale the object size
     }
 
     
