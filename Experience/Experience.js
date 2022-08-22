@@ -9,6 +9,7 @@ import Camera from "./Camera.js";
 import Renderer from "./Renderer.js";
 
 import Factory from "./Factory/Factory.js";
+import Machine from "./Factory/Machine.js";
 
 
 
@@ -20,7 +21,7 @@ export default class Experience {
 		if(Experience.instance){
 			return Experience.instance
 		}
-		
+
 		Experience.instance = this
       	this.canvas = canvas;
 		this.scene = new THREE.Scene();
@@ -30,6 +31,7 @@ export default class Experience {
 		this.renderer = new Renderer();
 		this.resources = new Resources(assets);
 		this.factory = new Factory();
+		this.machine = new Machine();
 
 		this.sizes.on("resize", () => {
 			this.resize();
