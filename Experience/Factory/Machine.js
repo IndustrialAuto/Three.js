@@ -19,6 +19,8 @@ export default class Machine{
 
     setModel(){
 
+
+        //For casting shadows on the object & from the objects.
         this.actualMachine.children.forEach((child) => {
             child.castShadow = true;
             child.receiveShadow = true;
@@ -31,7 +33,7 @@ export default class Machine{
             }
             
         });
-        this.scene.add(this.actualMachine);
+        this.scene.add(this.actualMachine);  //MAIN COMMAND TO IMPORT MACHINE INTO THE SCENE ON WEBPAGE.    
         this.actualMachine.scale.set(1,1,1);  //to scale the object size on the webPage.
         this.actualMachine.rotation.y = Math.PI; //for alligning properly on y axis.
     }
