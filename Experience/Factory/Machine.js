@@ -23,12 +23,12 @@ export default class Machine{
             child.castShadow = true;
             child.receiveShadow = true;
 
-            if (child instanceof THREE.group) {
-                child.children.forEach((groupchild) => {
-                    groupchild.castShadow = true;
-                    groupchild.receiveShadow = true;
-                });
-            }
+           // if (child instanceof THREE.group) {
+            //    child.children.forEach((groupchild) => {
+            //        groupchild.castShadow = true;
+            //        groupchild.receiveShadow = true;
+            //    });
+           // }
             
         });
         this.scene.add(this.actualMachine);
