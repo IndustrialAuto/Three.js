@@ -1,5 +1,4 @@
-
-import * as THREE from "three.js"
+import * as THREE from "three";
 import {EventEmitter} from "events";
 import Experience from "../Experience.js"
 import {GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader.js"
