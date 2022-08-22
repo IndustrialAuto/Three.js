@@ -11,12 +11,13 @@ export default class Factory{
         this.scene = this.experience.scene;
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
-        
+
         this.machine = new Machine();
 
         
         //console.log(this.camera, this.camera.perspectiveCamera, this.canvas)
-        this.setRenderer();
+        
+        
 
         
     }
