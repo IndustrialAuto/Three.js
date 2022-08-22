@@ -20,7 +20,7 @@ export default class Factory{
             console.log("created machine");
         });
 
-        this.machine = new Machine();
+        
 
         
         //console.log(this.camera, this.camera.perspectiveCamera, this.canvas)
