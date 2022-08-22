@@ -11,6 +11,12 @@ export default class Factory{
         this.scene = this.experience.scene;
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
+        this.resources = this.experience.resources;
+
+        this.resources.on("ready", () => {
+            this.machine = new Machine();
+            console.log("created machine");
+        });
 
         this.machine = new Machine();
 
