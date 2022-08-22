@@ -66,6 +66,12 @@ export default class Resources extends EventEmitter{
     signleAssetLoaded(asset, file) {
         this.items[asset.name] = file;
         this.loaded++;
+
+        console.log(file)
+
+        if (this.loaded === this.queue) {
+            this.emit("ready");
+        }
     }
 
 } 
