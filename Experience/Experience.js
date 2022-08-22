@@ -31,7 +31,7 @@ export default class Experience {
 		this.renderer = new Renderer();
 		this.resources = new Resources(assets);
 		this.factory = new Factory();
-		this.machine = new Machine();
+		
 
 		this.sizes.on("resize", () => {
 			this.resize();
