@@ -35,9 +35,20 @@ export default class Camera{
             -this.sizes.frustrum / 2,
             -100,
             100
-           
         );
         this.scene.add(this.orthographicCamera)
+
+        //Grid Helper to navigate with cursor in the page
+        const size = 10;
+        const divisions = 10;
+
+        const gridHelper = new THREE.GridHelper( size, divisions );
+        this.scene.add( gridHelper );
+        
+
+        //Axes Helper to navigate with cursor in the page
+        const axesHelper = new THREE.AxesHelper( 10 );
+        this.scene.add( axesHelper );
     }
     
     setOrbitControls() {
