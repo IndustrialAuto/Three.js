@@ -18,7 +18,7 @@ export default class Machine{
 
         
         //console.log(this.camera, this.camera.perspectiveCamera, this.canvas)
-        this.setRenderer();
+        
 
         
     }
