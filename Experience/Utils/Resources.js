@@ -49,6 +49,7 @@ export default class Resources extends EventEmitter{
                 this.video[assets.name].src = asset.path;
                 this.video[assets.name].playsInline = true;
                 this.video[assets.name].autoplay = true;
+                this.video[assets.name].muted = true;
                 this.video[assets.name].play();
 
                 this.videoTexture[asset.name].flipy = true;
